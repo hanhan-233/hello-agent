@@ -5,11 +5,11 @@ from tools import available_tools
 
 # --- 1. 配置LLM客户端 ---
 # 请根据您使用的服务，将这里替换成对应的凭证和地址
-API_KEY = "sk-25943782ccd346ba8ad2661dda8e0a23"
+API_KEY = "deepseek-v4-flash-api"
 BASE_URL = "https://api.deepseek.com"
 MODEL_ID = "deepseek-v4-flash"
-TAVILY_API_KEY = "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"
-os.environ['TAVILY_API_KEY'] = "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"
+TAVILY_API_KEY = "api-key"
+os.environ['TAVILY_API_KEY'] = "api-key"
 
 llm = OpenAICompatibleClient(
     model=MODEL_ID,
